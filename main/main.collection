@@ -1,0 +1,451 @@
+name: "main"
+collection_instances {
+  id: "dummy"
+  collection: "/walker/dummy/dummy.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  instance_properties {
+    id: "dummy"
+    properties {
+      id: "dummy"
+      properties {
+        id: "operator"
+        value: "/operator/operator"
+        type: PROPERTY_TYPE_URL
+      }
+    }
+    properties {
+      id: "walker"
+      properties {
+        id: "normal_speed"
+        value: "4.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "shift_speed"
+        value: "8.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "acceleration"
+        value: "100.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "deceleration"
+        value: "100.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "anti_bunny_time"
+        value: "0.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "operator"
+  collection: "/operator/operator/operator.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  instance_properties {
+    id: "operator"
+    properties {
+      id: "pointer_lock"
+      properties {
+        id: "unlock_action_id"
+        value: "unlock pointer"
+        type: PROPERTY_TYPE_HASH
+      }
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk1"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -20.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk2"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -40.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk3"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -60.0
+  }
+  rotation {
+    x: 0.0
+    y: -0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk4"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -80.0
+  }
+  rotation {
+    x: 0.0
+    y: 1.0
+    z: 0.0
+    w: 6.123234E-17
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk5"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 20.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: -0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk6"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 20.0
+    y: 0.0
+    z: -20.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk7"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 20.0
+    y: 0.0
+    z: -40.0
+  }
+  rotation {
+    x: 0.0
+    y: -0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk8"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 20.0
+    y: 0.0
+    z: -60.0
+  }
+  rotation {
+    x: 0.0
+    y: -0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk9"
+  collection: "/main/world chunk.collection"
+  position {
+    x: 20.0
+    y: 0.0
+    z: -80.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk10"
+  collection: "/main/world chunk.collection"
+  position {
+    x: -20.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 1.0
+    z: 0.0
+    w: 6.123234E-17
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk11"
+  collection: "/main/world chunk.collection"
+  position {
+    x: -20.0
+    y: 0.0
+    z: -20.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk12"
+  collection: "/main/world chunk.collection"
+  position {
+    x: -20.0
+    y: 0.0
+    z: -40.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk13"
+  collection: "/main/world chunk.collection"
+  position {
+    x: -20.0
+    y: 0.0
+    z: -60.0
+  }
+  rotation {
+    x: 0.0
+    y: -0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "world chunk14"
+  collection: "/main/world chunk.collection"
+  position {
+    x: -20.0
+    y: 0.0
+    z: -80.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "setup"
+  data: "components {\n"
+  "  id: \"camera-pos-tracker\"\n"
+  "  component: \"/main/camera-pos-tracker.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"camera_url\"\n"
+  "    value: \"/operator/operator\"\n"
+  "    type: PROPERTY_TYPE_URL\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"walker-config\"\n"
+  "  component: \"/main/walker-config.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}

@@ -1,0 +1,72 @@
+key_trigger {
+  input: KEY_ESC
+  action: "unlock pointer"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "move left"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "move right"
+}
+key_trigger {
+  input: KEY_UP
+  action: "move forward"
+}
+key_trigger {
+  input: KEY_DOWN
+  action: "move backward"
+}
+key_trigger {
+  input: KEY_SPACE
+  action: "jump"
+}
+key_trigger {
+  input: KEY_LSHIFT
+  action: "run"
+}
+key_trigger {
+  input: KEY_LCTRL
+  action: "crouch"
+}
+key_trigger {
+  input: KEY_W
+  action: "move forward"
+}
+key_trigger {
+  input: KEY_A
+  action: "move left"
+}
+key_trigger {
+  input: KEY_S
+  action: "move backward"
+}
+key_trigger {
+  input: KEY_D
+  action: "move right"
+}
+key_trigger {
+  input: KEY_COMMA
+  action: "move forward"
+}
+key_trigger {
+  input: KEY_O
+  action: "move backward"
+}
+key_trigger {
+  input: KEY_E
+  action: "move right"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_1
+  action: "touch"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_UP
+  action: "mouse_wheel_up"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_DOWN
+  action: "mouse_wheel_down"
+}

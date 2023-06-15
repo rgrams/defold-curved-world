@@ -1,0 +1,19 @@
+
+go.property("walker_url", msg.url("/dummy/dummy#walker"))
+
+function init(self)
+	local bindings = {
+		forward = hash("move forward"),
+		backward = hash("move backward"),
+		left = hash("move left"),
+		right = hash("move right"),
+		jump = hash("jump"),
+		crouch = hash("crouch"),
+		shift = hash("run")
+	}
+	local message = {
+		is_enabled = true,
+		bindings = bindings
+	}
+	msg.post(self.walker_url, hash("internal_control"), message)
+end

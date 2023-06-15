@@ -1,0 +1,7 @@
+
+function init(self)
+	
+end
+
+function on_reload(self)
+end
