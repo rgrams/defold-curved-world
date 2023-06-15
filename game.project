@@ -28,3 +28,6 @@ bundle_identifier = com.defold.example.basic3d
 [ios]
 bundle_identifier = com.defold.example.basic3d
 
+[input]
+game_binding = /game.input_bindingc
+

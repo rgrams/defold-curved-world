@@ -58,6 +58,22 @@ key_trigger {
   input: KEY_E
   action: "move right"
 }
+key_trigger {
+  input: KEY_PAGEUP
+  action: "curve z up"
+}
+key_trigger {
+  input: KEY_PAGEDOWN
+  action: "curve z down"
+}
+key_trigger {
+  input: KEY_HOME
+  action: "curve x up"
+}
+key_trigger {
+  input: KEY_END
+  action: "curve x down"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_1
   action: "touch"
