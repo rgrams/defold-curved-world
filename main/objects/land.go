@@ -2,7 +2,7 @@ embedded_components {
   id: "model"
   type: "model"
   data: "mesh: \"/assets/models/land.glb\"\n"
-  "material: \"/assets/materials/model.material\"\n"
+  "material: \"/curveworld/materials/curve-model.material\"\n"
   "textures: \"/assets/tex/1px.png\"\n"
   "skeleton: \"\"\n"
   "animations: \"\"\n"

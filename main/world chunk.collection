@@ -194,7 +194,7 @@ embedded_instances {
   "  id: \"model\"\n"
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/assets/models/floor.glb\\\"\\n"
-  "material: \\\"/assets/materials/model.material\\\"\\n"
+  "material: \\\"/curveworld/materials/curve-model.material\\\"\\n"
   "textures: \\\"/assets/tex/1px.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"

@@ -7,15 +7,14 @@ local function update_pos(self)
 	local pos = go.get_position(self.camera_url)
 	local cp = self.msg.camera_pos
 	cp.x, cp.y, cp.z = pos.x, pos.y, pos.z
+	msg.post("@render:", "set_camera_pos", self.msg)
 end
 
 function init(self)
 	self.msg = { camera_pos = vmath.vector4(1) }
 	update_pos(self)
-	msg.post("@render:", "set_camera_pos", self.msg)
 end
 
 function update(self, dt)
 	update_pos(self)
-	msg.post("@render:", "set_camera_pos", self.msg)
 end

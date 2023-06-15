@@ -1,7 +1,7 @@
 name: "model"
 tags: "model"
-vertex_program: "/assets/materials/model.vp"
-fragment_program: "/assets/materials/model.fp"
+vertex_program: "/curveworld/materials/curve-model.vp"
+fragment_program: "/curveworld/materials/curve-model.fp"
 vertex_space: VERTEX_SPACE_LOCAL
 vertex_constants {
   name: "mtx_world"
@@ -33,9 +33,9 @@ vertex_constants {
   name: "curve"
   type: CONSTANT_TYPE_USER
   value {
-    x: 0.02
+    x: 0.0
     y: 0.0
-    z: 0.02
+    z: 0.05
     w: 0.0
   }
 }

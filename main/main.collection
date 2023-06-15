@@ -394,7 +394,7 @@ embedded_instances {
   id: "setup"
   data: "components {\n"
   "  id: \"camera-pos-tracker\"\n"
-  "  component: \"/main/camera-pos-tracker.script\"\n"
+  "  component: \"/curveworld/curveworld-cam-tracker.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
