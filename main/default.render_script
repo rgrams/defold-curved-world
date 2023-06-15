@@ -93,7 +93,7 @@ function update(self)
 	render.set_view(self.view)
 	render.set_projection(proj)
 
-	local draw_options = { frustum = frustum, constants = self.constants }
+	local draw_options = { constants = self.constants } -- frustum = frustum -- Disable frustum culling for now to prevent pop-in.
 
 	-- render models
 	--
