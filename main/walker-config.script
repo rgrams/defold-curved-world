@@ -1,4 +1,6 @@
 
+-- Just change the Walker input action names so they're easier to modify.
+
 go.property("walker_url", msg.url("/dummy/dummy#walker"))
 
 function init(self)
