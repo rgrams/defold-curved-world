@@ -19,7 +19,7 @@ void main() {
 
 	vec4 to_cam = camera_pos - world_pos;
 	float k = to_cam.z*to_cam.z*curve.z + to_cam.x*to_cam.x*curve.x;
-	world_pos.y = world_pos.y - k*k;
+	world_pos.y = world_pos.y - k;
 
 	var_position = mtx_view * world_pos;
 	var_texcoord0 = texcoord0;
