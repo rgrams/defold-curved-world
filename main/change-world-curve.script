@@ -7,7 +7,7 @@ local CURVE_X_DOWN = hash("curve x down")
 local increment = 0.0005
 
 function init(self)
-	self.curve = vmath.vector4(0.02, 0, 0.02, 0)
+	self.curve = vmath.vector4(0.01, 0, 0.01, 0)
 	msg.post(".", "acquire_input_focus")
 end
 
