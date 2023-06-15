@@ -90,13 +90,15 @@ function update(self)
 	-- render world (sprites, tilemaps, particles etc)
 	--
 	local proj = get_projection(self)
-	local frustum = proj * self.view
+	-- Test hack: use much wider FOV for culling frustum to prevent pop-in with curved world.
+	local frust_proj = vmath.matrix4_perspective(math.rad(135), window_width/window_height, 0.1, 1000)
+	local frustum = frust_proj * self.view
 
 	render.set_viewport(0, 0, window_width, window_height)
 	render.set_view(self.view)
 	render.set_projection(proj)
 
-	local draw_options = { constants = self.constants } -- frustum = frustum -- Disable frustum culling for now to prevent pop-in.
+	local draw_options = { frustum = frustum, constants = self.constants }
 
 	-- render models
 	--
