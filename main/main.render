@@ -1,1 +1,1 @@
-script: "/main/default.render_script"
+script: "/main/main.render_script"
