@@ -1,5 +1,6 @@
 
 -- Modified 2023 by Ross Grams - Added model rendering and a few things for curved world shader.
+local curveworld = require "curveworld.curveworld"
 
 -- Copyright 2020-2023 The Defold Foundation
 -- Copyright 2014-2020 King
@@ -48,7 +49,7 @@ local function get_projection(self)
 end
 
 function init(self)
-	self.constants = render.constant_buffer()
+	curveworld.render_init(self)
 
 	self.tile_pred = render.predicate({"tile"})
 	self.gui_pred = render.predicate({"gui"})
@@ -90,15 +91,12 @@ function update(self)
 	-- render world (sprites, tilemaps, particles etc)
 	--
 	local proj = get_projection(self)
-	-- Test hack: use much wider FOV for culling frustum to prevent pop-in with curved world.
-	local frust_proj = vmath.matrix4_perspective(math.rad(135), window_width/window_height, 0.1, 1000)
-	local frustum = frust_proj * self.view
+
+	local draw_options = curveworld.get_draw_options(self)
 
 	render.set_viewport(0, 0, window_width, window_height)
 	render.set_view(self.view)
 	render.set_projection(proj)
-
-	local draw_options = { frustum = frustum, constants = self.constants }
 
 	-- render models
 	--
@@ -138,11 +136,8 @@ function update(self)
 end
 
 function on_message(self, message_id, message)
-	if message_id == hash("set_world_curve") then
-		self.constants.curve = message.curve
-	elseif message_id == hash("set_camera_pos") then
-		self.constants.camera_pos = message.camera_pos
-	elseif message_id == hash("clear_color") then
+	curveworld.render_on_message(self, message_id, message)
+	if message_id == hash("clear_color") then
 		self.clear_color = message.color
 	elseif message_id == hash("set_view_projection") then
 		self.view = message.view
