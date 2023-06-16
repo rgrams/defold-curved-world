@@ -1,4 +1,6 @@
 
+local curveworld = require "curveworld.curveworld"
+
 local CURVE_Z_UP = hash("curve z up")
 local CURVE_Z_DOWN = hash("curve z down")
 local CURVE_X_UP = hash("curve x up")
@@ -7,24 +9,17 @@ local CURVE_X_DOWN = hash("curve x down")
 local increment = 0.0005
 
 function init(self)
-	self.curve = vmath.vector4(0.01, 0, 0.01, 0)
 	msg.post(".", "acquire_input_focus")
-end
-
-local function change_curve(self, z, x)
-	if z then  self.curve.z = self.curve.z + z  end
-	if x then  self.curve.x = self.curve.x + x  end
-	msg.post("@render:", "set_world_curve", { curve = self.curve })
 end
 
 function on_input(self, action_id, action)
 	if action_id == CURVE_Z_UP then
-		change_curve(self, increment, nil)
+		curveworld.change_curve(increment, nil)
 	elseif action_id == CURVE_Z_DOWN then
-		change_curve(self, -increment, nil)
+		curveworld.change_curve(-increment, nil)
 	elseif action_id == CURVE_X_UP then
-		change_curve(self, nil, increment)
+		curveworld.change_curve(nil, increment)
 	elseif action_id == CURVE_X_DOWN then
-		change_curve(self, nil, -increment)
+		curveworld.change_curve(nil, -increment)
 	end
 end

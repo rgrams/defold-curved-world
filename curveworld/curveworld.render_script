@@ -136,7 +136,6 @@ function update(self)
 end
 
 function on_message(self, message_id, message)
-	curveworld.render_on_message(self, message_id, message)
 	if message_id == hash("clear_color") then
 		self.clear_color = message.color
 	elseif message_id == hash("set_view_projection") then
