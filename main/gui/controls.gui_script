@@ -6,21 +6,31 @@ local normalColor
 local sliderLength
 
 local increment = 0.04
+local zero_snap_dist = 0.00005
+
+local function Slider(prop_name, text_format)
+	return {
+		node = gui.get_node(prop_name .. " slider"),
+		text_node = gui.get_node(prop_name .. " text"),
+		prop = prop_name,
+		text = text_format
+	}
+end
 
 function init(self)
 	msg.post("#", "post_init")
 	self.sliders = {
-		gui.get_node("z slider"),
-		gui.get_node("x slider"),
-		gui.get_node("horiz slider"),
+		Slider("z", "Z-axis Curvature: %f"),
+		Slider("x", "X-axis Curvature: %f"),
+		Slider("horiz", "Horizontal Shear: %f"),
 	}
-	normalColor = gui.get_color(self.sliders[1])
-	sliderLength = gui.get_size(gui.get_parent(self.sliders[1])).x
+	normalColor = gui.get_color(self.sliders[1].node)
+	sliderLength = gui.get_size(gui.get_parent(self.sliders[1].node)).x
 end
 
 local function hit_check_sliders(self, x, y)
 	for i,s in ipairs(self.sliders) do
-		if gui.pick_node(s, x, y) then
+		if gui.pick_node(s.node, x, y) then
 			return s
 		end
 	end
@@ -49,27 +59,30 @@ end
 
 local function update_cursor(self, action)
 	if self.isDragging then
-		local pos = gui.get_position(self.hoveredSlider)
+		local pos = gui.get_position(self.hoveredSlider.node)
 		pos.x = math.max(0, math.min(action.screen_x + self.dragOX, sliderLength))
-		gui.set_position(self.hoveredSlider, pos)
+		gui.set_position(self.hoveredSlider.node, pos)
 		local k = (pos.x/sliderLength - 0.5) * 2
 		k = k*k*sign(k)
-		if self.hoveredSlider == self.sliders[1] then
-			curveworld.set_curve(k*increment)
-		elseif self.hoveredSlider == self.sliders[2] then
-			curveworld.set_curve(nil, k*increment)
-		elseif self.hoveredSlider == self.sliders[3] then
-			curveworld.set_curve(nil, nil, k*increment)
+		local value = k*increment
+		if math.abs(value) <= zero_snap_dist then  value = 0  end
+		if self.hoveredSlider.prop == "z" then
+			curveworld.set_curve(value)
+		elseif self.hoveredSlider.prop == "x" then
+			curveworld.set_curve(nil, value)
+		elseif self.hoveredSlider.prop == "horiz" then
+			curveworld.set_curve(nil, nil, value)
 		end
+		gui.set_text(self.hoveredSlider.text_node, self.hoveredSlider.text:format(value))
 	else
 		local slider = hit_check_sliders(self, action.x, action.y)
 		if self.hoveredSlider and slider ~= self.hoveredSlider then
-			unhover(self.hoveredSlider)
+			unhover(self.hoveredSlider.node)
 			self.hoveredSlider = nil
 		end
 		if slider then
 			self.hoveredSlider = slider
-			hover(slider)
+			hover(slider.node)
 		end
 	end
 end
@@ -81,7 +94,7 @@ function on_input(self, action_id, action)
 		if action.pressed then
 			if self.hoveredSlider then
 				self.isDragging = true
-				local pos = gui.get_position(self.hoveredSlider)
+				local pos = gui.get_position(self.hoveredSlider.node)
 				self.dragOX = pos.x - action.screen_x
 				return true
 			end

@@ -157,7 +157,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "horizontal shear"
+  text: "Horizontal Shear: 0.0"
   font: "system_font"
   id: "horiz text"
   xanchor: XANCHOR_NONE
@@ -397,7 +397,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "X-axis Curvature"
+  text: "X-axis Curvature: 0.0"
   font: "system_font"
   id: "x text"
   xanchor: XANCHOR_NONE
@@ -637,7 +637,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Z-axis Curvature"
+  text: "Z-axis Curvature: 0.0"
   font: "system_font"
   id: "z text"
   xanchor: XANCHOR_NONE
