@@ -3,7 +3,7 @@ embedded_components {
   type: "model"
   data: "mesh: \"/assets/models/land.glb\"\n"
   "material: \"/curveworld/materials/curve-model.material\"\n"
-  "textures: \"/assets/tex/1px.png\"\n"
+  "textures: \"/assets/tex/ground.png\"\n"
   "skeleton: \"\"\n"
   "animations: \"\"\n"
   "default_animation: \"\"\n"

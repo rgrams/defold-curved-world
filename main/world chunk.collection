@@ -34,8 +34,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
+    x: 1.4
+    y: 1.2
     z: 1.0
   }
 }
@@ -69,9 +69,9 @@ instances {
   }
   rotation {
     x: 0.0
-    y: 0.0
+    y: -0.27147368
     z: 0.0
-    w: 1.0
+    w: 0.96244586
   }
   scale3 {
     x: 1.0
@@ -94,16 +94,16 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 1.2
+    y: 1.2
+    z: 1.2
   }
 }
 instances {
   id: "tree1"
   prototype: "/main/objects/tree.go"
   position {
-    x: -3.0
+    x: -2.0
     y: 0.0
     z: -8.0
   }
@@ -195,7 +195,7 @@ embedded_instances {
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/assets/models/floor.glb\\\"\\n"
   "material: \\\"/curveworld/materials/curve-model.material\\\"\\n"
-  "textures: \\\"/assets/tex/1px.png\\\"\\n"
+  "textures: \\\"/assets/tex/ground.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
   "default_animation: \\\"\\\"\\n"
