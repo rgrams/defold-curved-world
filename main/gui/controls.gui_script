@@ -1,0 +1,96 @@
+
+local curveworld = require "curveworld.curveworld"
+
+local hoverColor = vmath.vector4(0.8, 0.8, 0.8, 1)
+local normalColor
+local sliderLength
+
+local increment = 0.04
+
+function init(self)
+	msg.post("#", "post_init")
+	self.sliders = {
+		gui.get_node("z slider"),
+		gui.get_node("x slider"),
+		gui.get_node("horiz slider"),
+	}
+	normalColor = gui.get_color(self.sliders[1])
+	sliderLength = gui.get_size(gui.get_parent(self.sliders[1])).x
+end
+
+local function hit_check_sliders(self, x, y)
+	for i,s in ipairs(self.sliders) do
+		if gui.pick_node(s, x, y) then
+			return s
+		end
+	end
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("post_init") then
+		msg.post(".", "acquire_input_focus") -- Make sure we're on top of the stack.
+	end
+end
+
+local function unhover(node)
+	gui.set_color(node, normalColor)
+end
+
+local function hover(node)
+	gui.set_color(node, hoverColor)
+end
+
+local function sign(x)
+	return x >= 0 and 1 or -1
+end
+
+local function update_cursor(self, action)
+	if self.isDragging then
+		local pos = gui.get_position(self.hoveredSlider)
+		pos.x = math.max(0, math.min(action.screen_x + self.dragOX, sliderLength))
+		gui.set_position(self.hoveredSlider, pos)
+		local k = (pos.x/sliderLength - 0.5) * 2
+		k = k*k*sign(k)
+		if self.hoveredSlider == self.sliders[1] then
+			curveworld.set_curve(k*increment)
+		elseif self.hoveredSlider == self.sliders[2] then
+			curveworld.set_curve(nil, k*increment)
+		elseif self.hoveredSlider == self.sliders[3] then
+			curveworld.set_curve(nil, nil, k*increment)
+		end
+	else
+		local slider = hit_check_sliders(self, action.x, action.y)
+		if self.hoveredSlider and slider ~= self.hoveredSlider then
+			unhover(self.hoveredSlider)
+			self.hoveredSlider = nil
+		end
+		if slider then
+			self.hoveredSlider = slider
+			hover(slider)
+		end
+	end
+end
+
+function on_input(self, action_id, action)
+	if not action_id then
+		update_cursor(self, action)
+	elseif action_id == hash("touch") then
+		if action.pressed then
+			if self.hoveredSlider then
+				self.isDragging = true
+				local pos = gui.get_position(self.hoveredSlider)
+				self.dragOX = pos.x - action.screen_x
+				return true
+			end
+		elseif action.released then
+			if self.hoveredSlider then
+				self.isDragging = false
+				update_cursor(self, action)
+				return true
+			end
+		end
+	end
+end
