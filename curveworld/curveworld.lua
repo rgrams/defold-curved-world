@@ -1,25 +1,25 @@
 
 local M = {}
 
-local cam_pos = vmath.vector4()
+local origin = vmath.vector4()
 local curve = vmath.vector4()
 local constants -- Buffer - needs to be initialized with render.constant_buffer()
 
-function M.get_cam_pos()
-	local cp = cam_pos
+function M.get_origin()
+	local cp = origin
 	return cp.x, cp.y, cp.z
 end
 
-function M.set_cam_pos(x, y, z)
-	local cp = cam_pos
+function M.set_origin(x, y, z)
+	local cp = origin
 	cp.x, cp.y, cp.z = x, y, z
-	constants.camera_pos = cam_pos
+	constants.curve_origin = origin
 end
-local set_cam_pos = M.set_cam_pos
+local set_origin = M.set_origin
 
-function M.update_cam_pos(obj_url)
+function M.update_origin(obj_url)
 	local pos = go.get_position(obj_url)
-	set_cam_pos(pos.x, pos.y, pos.z)
+	set_origin(pos.x, pos.y, pos.z)
 end
 
 function M.get_curve()
@@ -43,7 +43,7 @@ end
 function M.render_init(self)
 	constants = render.constant_buffer()
 	constants.curve = curve
-	constants.camera_pos = cam_pos
+	constants.curve_origin = origin
 end
 
 function M.get_draw_options(self)

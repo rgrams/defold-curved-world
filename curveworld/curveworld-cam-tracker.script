@@ -6,9 +6,9 @@ local curveworld = require "curveworld.curveworld"
 go.property("camera_url", msg.url())
 
 function init(self)
-	curveworld.update_cam_pos(self.camera_url)
+	curveworld.update_origin(self.camera_url)
 end
 
 function update(self, dt)
-	curveworld.update_cam_pos(self.camera_url)
+	curveworld.update_origin(self.camera_url)
 end
