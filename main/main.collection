@@ -1,95 +1,5 @@
 name: "main"
 collection_instances {
-  id: "dummy"
-  collection: "/walker/dummy/dummy.collection"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  instance_properties {
-    id: "dummy"
-    properties {
-      id: "dummy"
-      properties {
-        id: "operator"
-        value: "/operator/operator"
-        type: PROPERTY_TYPE_URL
-      }
-    }
-    properties {
-      id: "walker"
-      properties {
-        id: "normal_speed"
-        value: "4.0"
-        type: PROPERTY_TYPE_NUMBER
-      }
-      properties {
-        id: "shift_speed"
-        value: "8.0"
-        type: PROPERTY_TYPE_NUMBER
-      }
-      properties {
-        id: "acceleration"
-        value: "100.0"
-        type: PROPERTY_TYPE_NUMBER
-      }
-      properties {
-        id: "deceleration"
-        value: "100.0"
-        type: PROPERTY_TYPE_NUMBER
-      }
-      properties {
-        id: "anti_bunny_time"
-        value: "0.0"
-        type: PROPERTY_TYPE_NUMBER
-      }
-    }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-collection_instances {
-  id: "operator"
-  collection: "/operator/operator/operator.collection"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  instance_properties {
-    id: "operator"
-    properties {
-      id: "pointer_lock"
-      properties {
-        id: "unlock_action_id"
-        value: "unlock pointer"
-        type: PROPERTY_TYPE_HASH
-      }
-    }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-collection_instances {
   id: "world chunk"
   collection: "/main/world chunk.collection"
   position {
@@ -389,6 +299,26 @@ collection_instances {
     z: 1.0
   }
 }
+collection_instances {
+  id: "character"
+  collection: "/character.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "setup"
@@ -408,25 +338,8 @@ embedded_instances {
   "  }\n"
   "  properties {\n"
   "    id: \"camera_url\"\n"
-  "    value: \"/operator/operator\"\n"
+  "    value: \"/character/operator/operator\"\n"
   "    type: PROPERTY_TYPE_URL\n"
-  "  }\n"
-  "  property_decls {\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
-  "  id: \"walker-config\"\n"
-  "  component: \"/main/walker-config.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
   "  }\n"
   "  property_decls {\n"
   "  }\n"
