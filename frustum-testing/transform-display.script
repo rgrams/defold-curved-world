@@ -1,0 +1,105 @@
+
+-- Use debug lines to draw the shape of a transform matrix.
+
+local draw = require "debug-draw"
+local vec4 = vmath.vector4
+
+go.property("perspective", true)
+go.property("fov_deg", 90) -- Total vertical FOV.
+go.property("aspect_ratio", 1.777777) -- ~16/9
+go.property("near", 1)
+go.property("far", 5)
+
+go.property("left", -1)
+go.property("right", 1)
+go.property("bottom", -1)
+go.property("top", 1)
+go.property("ortho_near", -1)
+go.property("ortho_far", 1)
+
+local near_corners = {
+	vec4( 1,  1, -1, 1),
+	vec4(-1,  1, -1, 1),
+	vec4(-1, -1, -1, 1),
+	vec4( 1, -1, -1, 1),
+}
+local far_corners = {
+	vec4( 1,  1,  1, 1),
+	vec4(-1,  1,  1, 1),
+	vec4(-1, -1,  1, 1),
+	vec4( 1, -1,  1, 1),
+}
+local left_corners = {
+	vec4(-1,  1, -1, 1),
+	vec4(-1, -1, -1, 1),
+	vec4(-1, -1,  1, 1),
+	vec4(-1,  1,  1, 1),
+}
+local right_corners = {
+	vec4( 1,  1, -1, 1),
+	vec4( 1, -1, -1, 1),
+	vec4( 1, -1,  1, 1),
+	vec4( 1,  1,  1, 1),
+}
+
+local persp, ortho = vmath.matrix4_perspective, vmath.matrix4_orthographic
+
+local function update_transform(self)
+	if self.perspective then
+		self.transform = persp(math.rad(self.fov_deg), self.aspect_ratio, self.near, self.far)
+	else
+		self.transform = ortho(self.left, self.right, self.bottom, self.top, self.ortho_near, self.ortho_far)
+	end
+	self.inv = vmath.inv(self.transform)
+end
+
+function init(self)
+	update_transform(self)
+	self.pos = go.get_position()
+end
+
+local function transform_point(pos, transform, offset)
+	local p = transform * pos
+	p.x, p.y, p.z = p.x/p.w, p.y/p.w, p.z/p.w
+	if offset then
+		p.x, p.y, p.z = p.x + offset.x, p.y + offset.y, p.z + offset.z
+	end
+	return p
+end
+
+local function draw_box(corners, transform, offset, color)
+	local last_pos
+	local num_corners = #corners
+	for i=1,num_corners+1 do
+		local c = corners[i]
+		if i > num_corners then  c = corners[1]  end
+		local pos = transform_point(c, transform, offset)
+		if last_pos then  draw.ray(last_pos, pos, color)  end
+		last_pos = pos
+	end
+end
+
+local function draw_transform(inv_trans, color, color2, offset)
+	color = color or "yellow"
+	color2 = color2 or "orange"
+	draw_box(left_corners, inv_trans, offset, color)
+	draw_box(right_corners, inv_trans, offset, color)
+	draw_box(near_corners, inv_trans, offset, color)
+	draw_box(far_corners, inv_trans, offset, color)
+
+	local ctr_near = transform_point(vec4(0, 0, -1, 1), inv_trans)
+	local ctr_far = transform_point(vec4(0, 0, 1, 1), inv_trans)
+	local top_far = transform_point(vec4(0, 1, 1, 1), inv_trans)
+	draw.ray(ctr_near, ctr_far, color2)
+	draw.ray(ctr_far, top_far, color2)
+end
+
+function update(self, dt)
+	draw_transform(self.inv)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("update_transform") then
+		update_transform(self)
+	end
+end

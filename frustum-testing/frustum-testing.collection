@@ -1,0 +1,127 @@
+name: "main"
+collection_instances {
+  id: "character"
+  collection: "/character.collection"
+  position {
+    x: 7.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.70710677
+    z: 0.0
+    w: 0.70710677
+  }
+  instance_properties {
+    id: "dummy/dummy"
+    properties {
+      id: "walker"
+      properties {
+        id: "normal_speed"
+        value: "8.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "shift_speed"
+        value: "16.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "air_control"
+        value: "0.99"
+        type: PROPERTY_TYPE_NUMBER
+      }
+      properties {
+        id: "gravity"
+        value: "0.0, 0.0, 0.0"
+        type: PROPERTY_TYPE_VECTOR3
+      }
+      properties {
+        id: "gravity_acceleration"
+        value: "0.0"
+        type: PROPERTY_TYPE_NUMBER
+      }
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "grid"
+  data: "components {\n"
+  "  id: \"grid\"\n"
+  "  component: \"/frustum-testing/grid.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "frustum"
+  data: "components {\n"
+  "  id: \"frustum-display\"\n"
+  "  component: \"/frustum-testing/transform-display.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
