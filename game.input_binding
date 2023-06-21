@@ -74,6 +74,22 @@ key_trigger {
   input: KEY_END
   action: "curve x down"
 }
+key_trigger {
+  input: KEY_KP_8
+  action: "turn up"
+}
+key_trigger {
+  input: KEY_KP_5
+  action: "turn down"
+}
+key_trigger {
+  input: KEY_KP_4
+  action: "turn left"
+}
+key_trigger {
+  input: KEY_KP_6
+  action: "turn right"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_1
   action: "touch"

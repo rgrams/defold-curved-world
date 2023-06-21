@@ -27,6 +27,7 @@ game_binding = /game.input_bindingc
 [graphics]
 default_texture_min_filter = nearest
 default_texture_mag_filter = nearest
+max_draw_calls = 1200
 
 [render]
 clear_color_red = 0.45
@@ -36,3 +37,9 @@ clear_color_alpha = 1.0
 
 [library]
 include_dirs = curveworld
+
+[model]
+max_count = 1300
+
+[collection]
+max_instances = 1300

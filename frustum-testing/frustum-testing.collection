@@ -50,6 +50,1006 @@ collection_instances {
     z: 1.0
   }
 }
+collection_instances {
+  id: "forest chunk"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk1"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk2"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -11.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk3"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk4"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk5"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -13.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk6"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk7"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk8"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -15.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk9"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -7.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk10"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -7.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk11"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -17.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk12"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -13.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk13"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -13.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk14"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -11.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk15"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -11.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk16"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -15.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk17"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -17.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk18"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -15.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk19"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -15.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk20"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -17.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk21"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -11.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk22"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -17.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk23"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -13.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk24"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk25"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk26"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk27"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk28"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk29"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -7.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk30"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk31"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk32"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -7.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk33"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk34"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -7.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk35"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk36"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -19.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk37"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -9.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk38"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 2.0
+    y: 0.0
+    z: -19.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk39"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -19.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk40"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -9.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk41"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -19.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk42"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -9.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk43"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -4.0
+    y: 0.0
+    z: -9.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk44"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: -2.0
+    y: 0.0
+    z: -9.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk45"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -11.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk46"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -13.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk47"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -15.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk48"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -17.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
+collection_instances {
+  id: "forest chunk49"
+  collection: "/frustum-testing/forest chunk.collection"
+  position {
+    x: 4.0
+    y: 0.0
+    z: -19.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "grid"
@@ -93,6 +1093,150 @@ embedded_instances {
   data: "components {\n"
   "  id: \"frustum-display\"\n"
   "  component: \"/frustum-testing/transform-display.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"use_for_culling\"\n"
+  "    value: \"true\"\n"
+  "    type: PROPERTY_TYPE_BOOLEAN\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"perspective\"\n"
+  "    value: \"true\"\n"
+  "    type: PROPERTY_TYPE_BOOLEAN\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"fov_deg\"\n"
+  "    value: \"45.0\"\n"
+  "    type: PROPERTY_TYPE_NUMBER\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"near\"\n"
+  "    value: \"0.01\"\n"
+  "    type: PROPERTY_TYPE_NUMBER\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"far\"\n"
+  "    value: \"20.0\"\n"
+  "    type: PROPERTY_TYPE_NUMBER\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"ortho_far\"\n"
+  "    value: \"0.0\"\n"
+  "    type: PROPERTY_TYPE_NUMBER\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"rotator\"\n"
+  "  component: \"/frustum-testing/rotator.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"just for viewport display\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 1000.0\\n"
+  "auto_aspect_ratio: 0\\n"
+  "orthographic_projection: 0\\n"
+  "orthographic_zoom: 1.0\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 2.0
+    z: -1.0
+  }
+  rotation {
+    x: -0.39073446
+    y: 0.0
+    z: 0.0
+    w: 0.92050344
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"change-world-curve\"\n"
+  "  component: \"/main/change-world-curve.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "gui"
+  data: "components {\n"
+  "  id: \"controls\"\n"
+  "  component: \"/main/gui/controls.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"

@@ -4,6 +4,7 @@ local M = {}
 local origin = vmath.vector4()
 local curve = vmath.vector4()
 local constants -- Buffer - needs to be initialized with render.constant_buffer()
+local culling_frustum
 
 function M.get_origin()
 	local cp = origin
@@ -46,11 +47,18 @@ function M.render_init(self)
 	constants.curve_origin = origin
 end
 
-function M.get_draw_options(self)
+function M.set_cull_frustum(frustum)
+	culling_frustum = frustum
+end
+
+function M.calc_cull_frustum(self)
 	local win_width = render.get_window_width()
 	local win_height = render.get_window_height()
-	local frust_proj = vmath.matrix4_perspective(math.rad(135), win_width/win_height, 0.1, 1000)
-	local frustum = frust_proj * self.view
+	return vmath.matrix4_perspective(math.rad(135), win_width/win_height, 0.1, 1000) * self.view
+end
+
+function M.get_draw_options(self)
+	local frustum = culling_frustum or M.calc_cull_frustum(self)
 	return { frustum = frustum, constants = constants }
 end
 
