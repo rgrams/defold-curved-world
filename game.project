@@ -1,5 +1,5 @@
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /main-example/main.collectionc
 render = /curveworld/curveworld.renderc
 
 [script]

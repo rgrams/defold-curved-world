@@ -1,9 +1,9 @@
 embedded_components {
   id: "model"
   type: "model"
-  data: "mesh: \"/assets/models/land.glb\"\n"
+  data: "mesh: \"/common/models/land.glb\"\n"
   "material: \"/curveworld/materials/curve-model.material\"\n"
-  "textures: \"/assets/tex/ground.png\"\n"
+  "textures: \"/common/tex/ground.png\"\n"
   "skeleton: \"\"\n"
   "animations: \"\"\n"
   "default_animation: \"\"\n"

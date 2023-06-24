@@ -1,7 +1,7 @@
 name: "main"
 collection_instances {
   id: "character"
-  collection: "/character.collection"
+  collection: "/common/character.collection"
   position {
     x: 7.0
     y: 0.0
@@ -63,7 +63,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -83,7 +83,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk1"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -103,7 +103,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk2"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -123,7 +123,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk3"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -143,7 +143,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk4"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -163,7 +163,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk5"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -183,7 +183,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk6"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -203,7 +203,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk7"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -223,7 +223,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk8"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -243,7 +243,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk9"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -263,7 +263,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk10"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -283,7 +283,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk11"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -303,7 +303,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk12"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -323,7 +323,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk13"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -343,7 +343,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk14"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -363,7 +363,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk15"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -383,7 +383,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk16"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -403,7 +403,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk17"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -423,7 +423,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk18"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -443,7 +443,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk19"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -463,7 +463,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk20"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -483,7 +483,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk21"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -503,7 +503,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk22"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -523,7 +523,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk23"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -543,7 +543,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk24"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -563,7 +563,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk25"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -583,7 +583,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk26"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -603,7 +603,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk27"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -623,7 +623,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk28"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -643,7 +643,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk29"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -663,7 +663,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk30"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -683,7 +683,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk31"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -703,7 +703,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk32"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -723,7 +723,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk33"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -743,7 +743,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk34"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -763,7 +763,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk35"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -783,7 +783,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk36"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -803,7 +803,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk37"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -823,7 +823,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk38"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 2.0
     y: 0.0
@@ -843,7 +843,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk39"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -863,7 +863,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk40"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -883,7 +883,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk41"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -903,7 +903,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk42"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -923,7 +923,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk43"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -4.0
     y: 0.0
@@ -943,7 +943,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk44"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: -2.0
     y: 0.0
@@ -963,7 +963,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk45"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -983,7 +983,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk46"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -1003,7 +1003,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk47"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -1023,7 +1023,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk48"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -1043,7 +1043,7 @@ collection_instances {
 }
 collection_instances {
   id: "forest chunk49"
-  collection: "/frustum-testing/forest chunk.collection"
+  collection: "/common/forest chunk.collection"
   position {
     x: 4.0
     y: 0.0
@@ -1066,7 +1066,7 @@ embedded_instances {
   id: "grid"
   data: "components {\n"
   "  id: \"grid\"\n"
-  "  component: \"/frustum-testing/grid.script\"\n"
+  "  component: \"/frustum-testing/floor-grid-display.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1219,7 +1219,7 @@ embedded_instances {
   "}\n"
   "components {\n"
   "  id: \"cam-test\"\n"
-  "  component: \"/frustum-testing/cam-test.script\"\n"
+  "  component: \"/frustum-testing/set-display-to-auto-frustum.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1279,7 +1279,7 @@ embedded_instances {
   id: "go"
   data: "components {\n"
   "  id: \"change-world-curve\"\n"
-  "  component: \"/main/change-world-curve.script\"\n"
+  "  component: \"/common/scripts/change-world-curve.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1316,7 +1316,7 @@ embedded_instances {
   id: "gui"
   data: "components {\n"
   "  id: \"controls\"\n"
-  "  component: \"/main/gui/controls.gui\"\n"
+  "  component: \"/common/gui/controls.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"

@@ -1,4 +1,6 @@
 
+-- Set frustum display 2 to the auto-calculated culling frustum based on frustum display 1.
+
 local curveworld = require "curveworld.curveworld"
 
 local base_url = "#frustum-display"

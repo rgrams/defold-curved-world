@@ -1,7 +1,7 @@
 name: "world chunk"
 instances {
   id: "land"
-  prototype: "/main/objects/land.go"
+  prototype: "/common/objects/land.go"
   position {
     x: 6.0
     y: 0.0
@@ -21,7 +21,7 @@ instances {
 }
 instances {
   id: "rock"
-  prototype: "/main/objects/rock.go"
+  prototype: "/common/objects/rock.go"
   position {
     x: 6.0
     y: 0.0
@@ -41,7 +41,7 @@ instances {
 }
 instances {
   id: "rock1"
-  prototype: "/main/objects/rock.go"
+  prototype: "/common/objects/rock.go"
   position {
     x: -6.0
     y: 0.0
@@ -61,7 +61,7 @@ instances {
 }
 instances {
   id: "rock2"
-  prototype: "/main/objects/rock.go"
+  prototype: "/common/objects/rock.go"
   position {
     x: 3.0
     y: 0.0
@@ -81,7 +81,7 @@ instances {
 }
 instances {
   id: "tree"
-  prototype: "/main/objects/tree.go"
+  prototype: "/common/objects/tree.go"
   position {
     x: 6.0
     y: 0.0
@@ -101,7 +101,7 @@ instances {
 }
 instances {
   id: "tree1"
-  prototype: "/main/objects/tree.go"
+  prototype: "/common/objects/tree.go"
   position {
     x: -2.0
     y: 0.0
@@ -121,7 +121,7 @@ instances {
 }
 instances {
   id: "tree2"
-  prototype: "/main/objects/tree.go"
+  prototype: "/common/objects/tree.go"
   position {
     x: -2.0
     y: 0.0
@@ -193,9 +193,9 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"model\"\n"
   "  type: \"model\"\n"
-  "  data: \"mesh: \\\"/assets/models/floor.glb\\\"\\n"
+  "  data: \"mesh: \\\"/common/models/floor.glb\\\"\\n"
   "material: \\\"/curveworld/materials/curve-model.material\\\"\\n"
-  "textures: \\\"/assets/tex/ground.png\\\"\\n"
+  "textures: \\\"/common/tex/ground.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
   "default_animation: \\\"\\\"\\n"

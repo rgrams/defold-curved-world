@@ -1,7 +1,7 @@
 name: "main"
 collection_instances {
   id: "world chunk"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -21,7 +21,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk1"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -41,7 +41,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk2"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -61,7 +61,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk3"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -81,7 +81,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk4"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 0.0
     y: 0.0
@@ -101,7 +101,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk5"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 20.0
     y: 0.0
@@ -121,7 +121,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk6"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 20.0
     y: 0.0
@@ -141,7 +141,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk7"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 20.0
     y: 0.0
@@ -161,7 +161,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk8"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 20.0
     y: 0.0
@@ -181,7 +181,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk9"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: 20.0
     y: 0.0
@@ -201,7 +201,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk10"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: -20.0
     y: 0.0
@@ -221,7 +221,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk11"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: -20.0
     y: 0.0
@@ -241,7 +241,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk12"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: -20.0
     y: 0.0
@@ -261,7 +261,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk13"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: -20.0
     y: 0.0
@@ -281,7 +281,7 @@ collection_instances {
 }
 collection_instances {
   id: "world chunk14"
-  collection: "/main/world chunk.collection"
+  collection: "/common/world chunk.collection"
   position {
     x: -20.0
     y: 0.0
@@ -301,7 +301,7 @@ collection_instances {
 }
 collection_instances {
   id: "character"
-  collection: "/character.collection"
+  collection: "/common/character.collection"
   position {
     x: 0.0
     y: 0.0
@@ -346,7 +346,7 @@ embedded_instances {
   "}\n"
   "components {\n"
   "  id: \"change-world-curve\"\n"
-  "  component: \"/main/change-world-curve.script\"\n"
+  "  component: \"/common/scripts/change-world-curve.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -383,7 +383,7 @@ embedded_instances {
   id: "gui"
   data: "components {\n"
   "  id: \"controls\"\n"
-  "  component: \"/main/gui/controls.gui\"\n"
+  "  component: \"/common/gui/controls.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
