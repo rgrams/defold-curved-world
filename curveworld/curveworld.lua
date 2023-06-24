@@ -41,6 +41,27 @@ function M.change_curve(z, x, horiz)
 	constants.curve = curve
 end
 
+-- Calculate the curved vertex offset for a given delta-pos from the origin point.
+function M.get_curve_offset(dx, dz)
+	local kx, kz = dx*dx, dz*dz
+	local ox = -kz*curve.w
+	local oy = -kz*curve.z - kx*curve.x
+	return ox, oy
+end
+
+local MAX_FOV = math.pi - 0.00000001
+
+function M.get_cull_fov(fov, aspect, far)
+	local hh = math.tan(fov/2) * far
+	local hw = hh * aspect -- aspect = w/h
+	local max_dist = math.sqrt(hw*hw + hh*hh + far*far)
+	local max_dx, max_dy = M.get_curve_offset(max_dist, max_dist)
+	local new_hw, new_hh = hw + math.abs(max_dx), hh + math.abs(max_dy)
+	new_hh = math.max(new_hh, new_hw/aspect)
+	local new_fov = math.min(math.atan(new_hh/far) * 2, MAX_FOV)
+	return new_fov
+end
+
 function M.render_init(self)
 	constants = render.constant_buffer()
 	constants.curve = curve
