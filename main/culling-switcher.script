@@ -1,0 +1,35 @@
+
+local draw = require "debug-draw"
+local curveworld = require "curveworld.curveworld"
+
+local function is_enabled()
+	return go.get("#auto-frustum-cull", "is_enabled")
+end
+
+local function set_enabled(enabled)
+	go.set("#auto-frustum-cull", "is_enabled", enabled)
+end
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function update(self, dt)
+	local _, win_h = window.get_size()
+	draw.text("Frustum Culling: "..(curveworld.get_culling_enabled() and "Enabled" or "Disabled"), 5, win_h - 5)
+	draw.text("Frustum: "..(is_enabled() and "Auto" or "Camera"), 5, win_h - 20)
+end
+
+function on_input(self, action_id, action)
+	if action.pressed then
+		if action_id == hash("switch culling") then
+			local now_is_enabled = not is_enabled()
+			set_enabled(now_is_enabled)
+			if not now_is_enabled then
+				curveworld.set_cull_proj(nil)
+			end
+		elseif action_id == hash("toggle culling") then
+			curveworld.set_culling_enabled(not curveworld.get_culling_enabled())
+		end
+	end
+end
