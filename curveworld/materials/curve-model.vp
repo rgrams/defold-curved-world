@@ -26,5 +26,5 @@ void main() {
 	var_texcoord0 = texcoord0;
 	var_normal = normal;
 
-	gl_Position = mtx_proj * var_position;;
+	gl_Position = mtx_proj * var_position;
 }
