@@ -92,7 +92,7 @@ function update(self)
 	--
 	local proj = get_projection(self)
 
-	local draw_options = curveworld.get_draw_options(self)
+	local draw_options = curveworld.get_draw_options(self, proj)
 
 	render.set_viewport(0, 0, window_width, window_height)
 	render.set_view(self.view)
