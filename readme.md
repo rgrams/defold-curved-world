@@ -36,6 +36,8 @@ Or shear the world sideways with distance like some infinite runners do:
 - Backspace to toggle frustum culling on and off.
 - Enter to switch the culling frustum between the default camera frustum and an automatically-calculated one based on the current world curvature and the current camera.
 
+Also see [here](https://github.com/rgrams/defold-light-and-shadows-curved/) for a demo of the effect applied to Dragosha's [light and shadows](https://github.com/Dragosha/defold-light-and-shadows) example.
+
 ## Usage
 
 You can use this project as a [Library Dependency](https://defold.com/manuals/libraries/#setting-up-library-dependencies) by copying the following URL into your game.project file:
