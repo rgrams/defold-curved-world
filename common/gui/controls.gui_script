@@ -1,12 +1,26 @@
 
 local curveworld = require "curveworld.curveworld"
 
+local pointer = require "pointer_lock.pointer"
+local LOCK_POINTER = hash("touch")
+local UNLOCK_POINTER = hash("unlock pointer")
+
 local hoverColor = vmath.vector4(0.8, 0.8, 0.8, 1)
 local normalColor
 local sliderLength
 
 local increment = 0.04
 local zero_snap_dist = 0.00005
+
+local function lock_mouse_on_interaction(self)
+	if not pointer.locked and not self.hoveredSlider then
+		window.set_mouse_lock(true)
+	end
+end
+
+local function update_pointer_lock_state()
+	pointer.locked = window.get_mouse_lock()
+end
 
 local function Slider(prop_name, text_format)
 	return {
@@ -26,6 +40,16 @@ function init(self)
 	}
 	normalColor = gui.get_color(self.sliders[1].node)
 	sliderLength = gui.get_size(gui.get_parent(self.sliders[1].node)).x
+
+	if html5 then
+		html5.set_interaction_listener(lock_mouse_on_interaction)
+	end
+end
+
+function final(self)
+	if html5 then
+		html5.set_interaction_listener(nil)
+	end
 end
 
 local function hit_check_sliders(self, x, y)
@@ -37,6 +61,11 @@ local function hit_check_sliders(self, x, y)
 end
 
 function update(self, dt)
+	if html5 then
+		-- If user presses "esc" to exit pointer lock then web browsers don't fire "input" event.
+		-- That's why we have to check the pointer lock status in the update loop.
+		update_pointer_lock_state()
+	end
 end
 
 function on_message(self, message_id, message, sender)
@@ -102,6 +131,27 @@ function on_input(self, action_id, action)
 			if self.hoveredSlider then
 				self.isDragging = false
 				update_cursor(self, action)
+				return true
+			end
+		end
+	end
+
+	if html5 then
+		if pointer.locked and action_id == UNLOCK_POINTER and action.released then
+			update_pointer_lock_state()
+			window.set_mouse_lock(false)
+			return true
+		end
+	else
+		if action_id == UNLOCK_POINTER and action.released then
+			local skip_events = pointer.locked
+			pointer.locked = false
+			window.set_mouse_lock(false)
+			return skip_events
+		elseif action_id == LOCK_POINTER and action.released then
+			if not pointer.locked then
+				pointer.locked = true
+				window.set_mouse_lock(true)
 				return true
 			end
 		end

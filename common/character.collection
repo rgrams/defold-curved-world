@@ -60,7 +60,7 @@ collection_instances {
 }
 collection_instances {
   id: "operator"
-  collection: "/operator/operator/operator.collection"
+  collection: "/common/operator.collection"
   position {
     x: 0.0
     y: 0.0
@@ -71,17 +71,6 @@ collection_instances {
     y: 0.0
     z: 0.0
     w: 1.0
-  }
-  instance_properties {
-    id: "operator"
-    properties {
-      id: "pointer_lock"
-      properties {
-        id: "unlock_action_id"
-        value: "unlock pointer"
-        type: PROPERTY_TYPE_HASH
-      }
-    }
   }
   scale3 {
     x: 1.0

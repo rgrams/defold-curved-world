@@ -1,0 +1,2 @@
+-- Just here to fake out Defold's build system. 
+-- Even though the operator collection is not used, its dependencies are checked.

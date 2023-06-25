@@ -25,7 +25,7 @@ Or shear the world sideways with distance like some infinite runners do:
 Download the repository and run it to try the demo (pictured above).
 
 - Click on window to capture cursor and activate mouse look control.
-- Press escape to release cursor capture (needed to drag UI sliders again).
+- Press escape or tilde to release cursor capture (needed to drag UI sliders again).
 - WASD or arrow keys to move character.
 - Mouse wheel to zoom in and out.
 - Space to jump.
