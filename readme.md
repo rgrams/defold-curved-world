@@ -9,7 +9,7 @@ The main feature of this project is a simple vertex shader that offsets the vert
 
 Also included are a sample render script, a lua module, and some optional game-object scripts that provide some helpful code for manipulating the shader's inputs and making frustum culling work with the resulting curved vertex positions.
 
-The shader only modifies how things _appear_ on screen. Mechanically, everything is still flat, so physics and everything else is unaffected. Also note that the shader cannot curve edges between vertices, so models may need extra geometry to curve nicely.
+The shader only modifies how things _appear_ on screen. Mechanically everything is still flat, so physics and everything else are unaffected. Also note that the shader cannot curve edges between vertices, so larger models may need extra geometry to curve nicely.
 
 Curve only the Z-axis to get an Animal Crossing effect:
 ![](doc/curved-world-screenshot-log.jpg)
