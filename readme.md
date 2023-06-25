@@ -22,7 +22,7 @@ Or shear the world sideways with distance like some infinite runners do:
 
 ## Demo Controls
 
-Download the repository and run it to try the demo (pictured above).
+[Try the demo here](https://rgrams.github.io/defold-curved-world/) or download the repository and run it.
 
 - Click on window to capture cursor and activate mouse look control.
 - Press escape or tilde to release cursor capture (needed to drag UI sliders again).
